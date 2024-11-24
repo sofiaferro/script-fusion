@@ -1,4 +1,4 @@
-export default {
+const globalData =  {
     projectName: 'Balvanera Fusión',
     headerName: 'Balvanera Fusión',
     menuItems: [{name: 'Nodos', id: 'nodos'}, {name: 'Sobre este proyecto', id: 'sobre-este-proyecto'}],
@@ -9,3 +9,5 @@ export default {
     firstSectionTitle: '<<< ~+ Nodos +~ >>>',
     secondSectionTitle: '_~* Sobre este proyecto *~_',
 }
+
+export default globalData;

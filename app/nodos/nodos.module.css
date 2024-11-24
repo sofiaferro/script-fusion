@@ -1,0 +1,45 @@
+.fadeIn {
+    opacity: 0.01;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .titleAnimation {
+    opacity: 0.01;
+    transform: translateY(-20px);
+    animation: slideDown 0.5s ease-out forwards;
+  }
+  
+  .cardContainer {
+    opacity: 1;
+  }
+  
+  .cardItem {
+    opacity: 0.01;
+    transform: translateY(20px);
+  }
+  
+  .cardVisible {
+    animation: cardAppear 0.5s ease-out forwards;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0.01;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes cardAppear {
+    from {
+      opacity: 0.01;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,39 @@
+.fadeIn {
+    opacity: 0.01;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .titleAnimation {
+    opacity: 0.01;
+    transform: translateY(-20px);
+    animation: slideDown 0.5s ease-out forwards;
+  }
+  
+  .contentAnimation {
+    opacity: 0.01;
+    transform: translateY(20px);
+    animation: slideUp 0.5s ease-out forwards;
+  }
+  
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0.01;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0.01;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

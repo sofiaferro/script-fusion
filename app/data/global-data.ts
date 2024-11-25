@@ -1,9 +1,9 @@
 const globalData =  {
-    projectName: 'Balvanera Fusión',
-    headerName: 'Balvanera Fusión',
+    projectName: 'Script Fusión',
+    headerName: 'Script Fusión',
     menuItems: [{name: 'Nodos', id: 'nodos'}, {name: 'Sobre este proyecto', id: 'sobre-este-proyecto'}],
     menuIds: ['nodes', 'about'],
-    heroTitle: '~+ Balvanera Fusión +~',
+    heroTitle: '~+ Script Fusión +~',
     heroDescription: 'un barrio, muchas culturas, infinito mosaico de sabores',
     heroButton: '[[ Explorar ]]',
     firstSectionTitle: '<<< ~+ Nodos +~ >>>',

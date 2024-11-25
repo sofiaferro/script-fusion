@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Balvanera Fusión",
+  title: "Script Fusión",
   icons: {
     icon: '/favicon.png'
   }

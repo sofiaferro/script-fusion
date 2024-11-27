@@ -33,7 +33,7 @@ export const restaurantsData = [
   },
   {
     name: 'Lio San',
-    description: 'Chaufa',
+    description: 'Chifa',
     address: 'H. Yrigoyen 2101',
     image: '/images/placeholder.svg?height=300&width=400',
     origin: 'Perú',

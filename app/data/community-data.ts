@@ -1,56 +1,72 @@
 export const communityData = [
   {
-    name: 'Chilena',
+    name: 'Chile',
     image: '/images/glitch-chilena.png?height=300&width=300',
-    description: 'Contribución significativa a la diversidad cultural, especialmente en Bajo Flores y Liniers.',
-    famousDish: 'Empanadas de Pino',
-    yearOfArrival: '1970s',
-    imagePath:'/images/glitch-chilena.png',
-    imageName:'glitch-chilena.png'
+    description: 'El calor del ají, el maíz tierno, y el frescor del mar en cada bocado.',
+    poblation: '723',
+    imagePaths: [] // No hay imágenes disponibles en la estructura proporcionada.
   },
   {
-    name: 'Española',
-    image: '/images/glitch-española.png?height=300&width=300',
-    description: 'Fundamental en la formación de la identidad porteña, influyendo en gastronomía y costumbres.',
-    famousDish: 'Paella',
-    yearOfArrival: '1857',
-    imagePath:'/images/glitch-española.png',
-    imageName:'glitch-española.png'
+    name: 'España',
+    image: '/images/glitch-española.jpg?height=300&width=300',
+    description: 'Arroz dorado, mariscos jugosos y el toque profundo del azafrán.',
+    poblation: '838',
+    imagePaths: [
+      '/images/receipts/española/Esp_1.png'
+    ]
   },
   {
-    name: 'Dominicana',
+    name: 'República Dominicana',
     image: '/images/glitch-dominicana.png?height=300&width=300',
-    description: 'Presencia notable en el sector de servicios, comunidad más reciente.',
-    famousDish: 'Mangú',
-    yearOfArrival: '1990s',
-    imagePath:'/images/glitch-dominicana.png',
-    imageName:'glitch-dominicana.png'
+    description: 'Platos con la suavidad del plátano, el calor del guiso y la magia de los condimentos caribeños.',
+    poblation: '168.240 (países no limítrofes)',
+    imagePaths: [
+      '/images/receipts/dominicana/Dom_1.png',
+      '/images/receipts/dominicana/Dom_2.png',
+      '/images/receipts/dominicana/Dom_3.png'
+    ]
   },
   {
-    name: 'Italiana',
+    name: 'Italia',
     image: '/images/glitch-italiana.png?height=300&width=300',
-    description: 'Influencia omnipresente, desde la arquitectura hasta la gastronomía.',
-    famousDish: 'Pizza Argentina',
-    yearOfArrival: '1880',
-    imagePath:'/images/glitch-italiana.png',
-    imageName:'glitch-italiana.png'
+    description: 'El aroma del tomate maduro, la albahaca fresca y la suavidad del aceite de oliva.',
+    poblation: '394',
+    imagePaths: ['/images/receipts/chifa/Ita_1.png']
   },
   {
-    name: 'Chaufa',
-    image: '/images/glitch-chaufa.jpg?height=300&width=300',
-    description: 'Fusión de tradiciones culinarias chinas y sudamericanas, ganando popularidad.',
-    famousDish: 'Arroz Chaufa',
-    yearOfArrival: '1990s',
-    imagePath:'/images/glitch-chaufa.jpg',
-    imageName:'glitch-chaufa.jpg'
+    name: 'Perú y Chifa',
+    image: '/images/glitch-chifa2.png?height=300&width=300',
+    description: 'Un balance perfecto de ají picante, mariscos frescos y el toque único de los encurtidos.',
+    poblation: '8.334',
+    imagePaths: [
+      '/images/receipts/chifa/Chi_1.png',
+      '/images/receipts/peru/Per_1.png',
+      '/images/receipts/peru/Per_2.png',
+      '/images/receipts/peru/Per_3.png',
+    ]
   },
   {
-    name: 'Colombiana',
-    image: '/images/glitch-colombiana.jpg?height=300&width=300',
-    description: 'Creciente comunidad que aporta su rica cultura cafetera y musical a la escena porteña.',
-    famousDish: 'Bandeja Paisa',
-    yearOfArrival: '1970s',
-    imagePath:'/images/glitch-colombiana.jpg',
-    imageName:'glitch-colombiana.jpg'
-  }
+    name: 'Colombia',
+    image: '/images/glitch-colombiana.png?height=300&width=300',
+    description: 'La suavidad del maíz, la frescura de las hierbas y el sabor profundo de las carnes.',
+    poblation: '1.669',
+    imagePaths: [
+      '/images/receipts/colombia/Col_1.png',
+      '/images/receipts/colombia/Col_2.png'
+    ]
+  },
+];
+
+export const extraData = [
+  {
+    name: 'Perú',
+    image: '/images/glitch-peruana.png?height=300&width=300',
+    description: 'La fusión de ají, arroz y mariscos, una mezcla de aromas y sabores que atraviesan fronteras.',
+    poblation: '8.334',
+    imagePaths: [
+      '/images/receipts/peru/Per_1.png',
+      '/images/receipts/peru/Per_2.png',
+      '/images/receipts/peru/Per_3.png',
+    ]
+  },
 ];

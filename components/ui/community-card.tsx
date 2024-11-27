@@ -8,20 +8,16 @@ interface CommunityCardProps {
   name: string
   image: string
   description: string
-  famousDish: string
-  yearOfArrival: string
-  imageName: string
-  imagePath: string
+  poblation: string
+  imagePaths: string[]
 }
 
 export function CommunityCard({ 
   name, 
   image, 
   description, 
-  famousDish, 
-  yearOfArrival,
-  imagePath,
-  imageName,
+  poblation,
+  imagePaths,
 }: CommunityCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -49,7 +45,7 @@ export function CommunityCard({
   return (
     <>
       <div
-        className="bg-black/40 backdrop-blur-sm rounded-lg border border-white/10 shadow-lg overflow-hidden relative transition-transform duration-200 ease-in-out hover:-translate-y-2"
+        className="bg-black/40 backdrop-blur-sm rounded-lg border border-white/10 shadow-lg overflow-hidden relative transition-transform duration-200 ease-in-out hover:-translate-y-2 max-w-sm w-full" // Se agrega max-w-sm y w-full para que sea responsive
         onMouseEnter={handleHover}
         onMouseLeave={handleLeave}
       >
@@ -76,14 +72,8 @@ export function CommunityCard({
           <p className="text-sm text-gray-300 mb-4">
             {description}
           </p>
-          <div className="flex justify-between items-center mb-4">
-            <div>
-              <strong className="text-white/90">Llegada:</strong>
-              <p className="text-sm text-gray-400">{yearOfArrival}</p>
-            </div>
-          </div>
           <div className="mt-4">
-            <PrintButton imagePath={imagePath} imageName={imageName} onError={handleError}/>
+            <PrintButton imagePaths={imagePaths} onError={handleError}/>
           </div>
         </div>
       </div>

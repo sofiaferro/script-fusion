@@ -5,21 +5,27 @@ import { Button } from '@/components/ui/button'
 import styles from './print-button.module.css'
 
 interface PrintButtonProps {
-  imagePath: string
-  imageName: string
+  imagePaths: string[]
   onError: (error: string) => void
 }
 
-export function PrintButton({ imagePath, imageName, onError }: PrintButtonProps) {
+export function PrintButton({ imagePaths, onError }: PrintButtonProps) {
   const [isPrinting, setIsPrinting] = useState(false)
 
   const handlePrint = async () => {
     setIsPrinting(true)
+
     try {
-      const formData = new FormData()
-      const response = await fetch(imagePath)
+      const randomImagePath = imagePaths[Math.floor(Math.random() * imagePaths.length)]
+
+      const response = await fetch(randomImagePath)
+      if (!response.ok) {
+        throw new Error('Failed to fetch the image')
+      }
       const blob = await response.blob()
-      formData.append('image', blob, `${imageName}`)
+
+      const formData = new FormData()
+      formData.append('image', blob, randomImagePath.split('/').pop())
 
       const printResponse = await fetch('/api/print', {
         method: 'POST',

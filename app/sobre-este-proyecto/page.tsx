@@ -27,7 +27,7 @@ export default function SobreEsteProyectoPage() {
             <h1 className={`text-center mb-12 lg:mb-16 ${styles.titleAnimation}`}>
               <GlitchText
                 text={globalData.secondSectionTitle}
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white"
+                className="text-4xl sm:text-5xl pt-8 lg:text-6xl font-bold text-white"
               />
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -70,17 +70,29 @@ export default function SobreEsteProyectoPage() {
                   <p>[[ Ver Nodos ]]</p>
                 </button>
               </ContentBox>
-              <ContentBox>
-                <div className="h-full flex flex-col justify-center">
+              <div className="h-full flex flex-col justify-center">
+                <ContentBox className='mb-8'>
                   <GlitchText
                     text={'Integrantes'}
+                    className='text-white text-2xl font-bold pb-2'
+                  />
+                  <p className='pb-8'>
+                    Iris Saladino, Isis Vargas y Sofía Ferro
+                  </p>
+                </ContentBox>
+
+                <ContentBox>
+                  <GlitchText
+                    text={'Contacto'}
                     className='text-white pb-2 text-2xl font-bold'
                   />
                   <p>
-                    Iris Saladino, Isis Vargas y Sofía Ferro
+                    <a href="mailto:script.fusion.lab@gmail.com">
+                      script.fusion.lab@gmail.com
+                    </a>
                   </p>
-                </div>
-              </ContentBox>
+                </ ContentBox>
+              </div>
             </div>
           </div>
         </main>

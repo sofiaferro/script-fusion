@@ -41,7 +41,6 @@ export default function Page() {
                     {...community}
                     aria-label={`community card for ${community.name}`}
                     isPrinterAvailable={isPrinterAvailable}
-                    error={error}
                     setError={setError}
                   />
                 </div>

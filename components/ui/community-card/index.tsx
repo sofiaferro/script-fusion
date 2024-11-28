@@ -39,6 +39,7 @@ export function CommunityCard({
 
 
   const handlePrint = async () => {
+    if (isPrinting) return;
     setIsPrinting(true)
     setSuccess(true)
  

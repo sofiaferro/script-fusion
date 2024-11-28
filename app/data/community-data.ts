@@ -9,7 +9,7 @@ export const communityData = [
   {
     name: 'España',
     image: '/images/glitch-española.jpg?height=300&width=300',
-    description: 'Arroz dorado, mariscos jugosos y el toque profundo del azafrán.',
+    description: 'Arroz dorado, mariscos y el toque profundo del azafrán.',
     poblation: '838',
     imagePaths: [
       '/images/receipts/española/Esp_1.png'
@@ -29,14 +29,14 @@ export const communityData = [
   {
     name: 'Italia',
     image: '/images/glitch-italiana.png?height=300&width=300',
-    description: 'El aroma del tomate maduro, la albahaca fresca y la suavidad del aceite de oliva.',
+    description: 'El aroma del tomate maduro, la albahaca fresca y el picor del aceite de oliva.',
     poblation: '394',
     imagePaths: ['/images/receipts/chifa/Ita_1.png']
   },
   {
     name: 'Perú y Chifa',
     image: '/images/glitch-chifa2.png?height=300&width=300',
-    description: 'Un balance perfecto de ají picante, mariscos frescos y el toque único de los encurtidos.',
+    description: 'Un balance perfecto de ají picante, mariscos frescos y encurtidos.',
     poblation: '8.334',
     imagePaths: [
       '/images/receipts/chifa/Chi_1.png',
@@ -48,7 +48,7 @@ export const communityData = [
   {
     name: 'Colombia',
     image: '/images/glitch-colombiana.png?height=300&width=300',
-    description: 'La suavidad del maíz, la frescura de las hierbas y el sabor profundo de las carnes.',
+    description: 'La suavidad del maíz, la frescura de las hierbas y la mezcla perfecta de carne y especias.',
     poblation: '1.669',
     imagePaths: [
       '/images/receipts/colombia/Col_1.png',

@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import styles from './glitch-text.module.css'
+import styles from './index.module.css'
 
 interface GlitchTextProps {
   text: string

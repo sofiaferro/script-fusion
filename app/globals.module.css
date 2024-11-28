@@ -14,15 +14,15 @@
     transform: translateY(0);
   }
   
-  .heroButton {
+  .button {
     transition: transform 0.2s ease-out;
   }
   
-  .heroButton:hover {
+  .button:hover {
     transform: scale(1.05);
   }
   
-  .heroButton:active {
+  .button:active {
     transform: scale(0.95);
   }
   
@@ -31,7 +31,10 @@
     transition: transform 0.4s ease-out;
   }
   
-  .heroButton:hover .buttonHoverEffect {
+  .button:hover .buttonHoverEffect {
     transform: translateX(100%);
   }
   
+  .buttonBorder {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }

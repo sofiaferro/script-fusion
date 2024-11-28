@@ -8,14 +8,16 @@ export default function Home() {
   const router = useRouter();
 
   const action = () => {
-    router.replace('/nodos');
+    router.replace('/sobre-este-proyecto');
   }
 
   return (
     <div className="min-h-screen bg-black">
       <Header />
       <main>
-        <HeroSection action={action} />
+        <div className="p-5">
+          <HeroSection action={action} />
+        </div>
       </main>
     </div>
   )

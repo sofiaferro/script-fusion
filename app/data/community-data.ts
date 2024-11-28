@@ -4,7 +4,7 @@ export const communityData = [
     image: '/images/glitch-chilena.png?height=300&width=300',
     description: 'El calor del ají, el maíz tierno, y el frescor del mar en cada bocado.',
     poblation: '723',
-    imagePaths: [] // No hay imágenes disponibles en la estructura proporcionada.
+    imagePaths: ['/']
   },
   {
     name: 'España',

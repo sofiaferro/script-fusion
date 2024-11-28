@@ -4,7 +4,6 @@ import { useState, useCallback } from 'react'
 import Image from 'next/image'
 import { PrintButton } from './print-button'
 import { useRouter } from 'next/navigation'
-import { ErrorModal } from '../error-print-modal'
 
 interface CommunityCardProps {
   name: string
@@ -13,6 +12,7 @@ interface CommunityCardProps {
   imagePaths: string[]
   isPrinterAvailable?: boolean
   setError: (error: boolean) => void
+  setSuccess: (success: boolean) => void
 }
 
 export function CommunityCard({
@@ -22,6 +22,7 @@ export function CommunityCard({
   imagePaths,
   isPrinterAvailable = true,
   setError,
+  setSuccess,
 }: CommunityCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
@@ -39,7 +40,8 @@ export function CommunityCard({
 
   const handlePrint = async () => {
     setIsPrinting(true)
-
+    setSuccess(true)
+ 
     try {
       const randomImagePath = imagePaths[Math.floor(Math.random() * imagePaths.length)]
 
@@ -57,11 +59,8 @@ export function CommunityCard({
         body: formData,
       })
 
-      if (!printResponse.ok) {
-        throw new Error('Failed to send print request')
-      }
-
       const result = await printResponse.json()
+      setSuccess(true)
       return result;
     } catch (error) {
       setError(true)

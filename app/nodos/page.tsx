@@ -8,10 +8,12 @@ import { communityData } from "../data/community-data"
 import { ParticleScene } from "@/components/ui/particle-scene"
 import styles from './nodos.module.css'
 import { ErrorModal } from "@/components/ui/error-print-modal"
+import { SuccessModal } from "@/components/ui/success-print-modal"
 
 export default function Page() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
 
   useEffect(() => {
     setIsLoaded(true)
@@ -19,6 +21,16 @@ export default function Page() {
 
   // set default for exhibition
   const isPrinterAvailable = true;
+
+  useEffect(() => {
+    let successTimeout: string | number | NodeJS.Timeout | undefined;
+    if (success) {
+      successTimeout = setTimeout(() => {
+        setSuccess(false);
+      }, 15000);
+      return () => clearTimeout(successTimeout);
+    }
+  }, [success]);
 
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-hidden">
@@ -31,7 +43,7 @@ export default function Page() {
             <h1 className={`text-center mb-12 ${styles.titleAnimation}`}>
               <GlitchText
                 text={globalData.firstSectionTitle}
-                className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight"
+                className="text-5xl sm:text-6xl pt-8 lg:text-7xl font-bold text-white tracking-tight"
               />
             </h1>
             <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ${styles.cardContainer}`}>
@@ -42,6 +54,7 @@ export default function Page() {
                     aria-label={`community card for ${community.name}`}
                     isPrinterAvailable={isPrinterAvailable}
                     setError={setError}
+                    setSuccess={setSuccess}
                   />
                 </div>
               ))}
@@ -50,6 +63,9 @@ export default function Page() {
           {error && (
             <ErrorModal onClose={() => setError(false)} />
           )}
+          {success &&
+            <SuccessModal />
+          }
         </main>
       </div>
     </div>

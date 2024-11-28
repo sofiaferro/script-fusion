@@ -2,15 +2,15 @@ export const communityData = [
   {
     name: 'Chile',
     image: '/images/glitch-chilena.png?height=300&width=300',
-    description: 'El calor del ají, el maíz tierno, y el frescor del mar en cada bocado.',
-    poblation: '723',
-    imagePaths: ['/']
+    description: 'El picor del ají, la textura del maíz fresco y el inconfundible sabor del mar.',
+    population: '723',
+    imagePaths: ['/images/receipts/chile/Chi_1.png']
   },
   {
     name: 'España',
     image: '/images/glitch-española.jpg?height=300&width=300',
-    description: 'Arroz dorado, mariscos y el toque profundo del azafrán.',
-    poblation: '838',
+    description: 'La esencia del Mediterráneo: arroz dorado, mariscos jugosos y el aroma del azafrán.',
+    population: '838',
     imagePaths: [
       '/images/receipts/española/Esp_1.png'
     ]
@@ -18,8 +18,8 @@ export const communityData = [
   {
     name: 'República Dominicana',
     image: '/images/glitch-dominicana.png?height=300&width=300',
-    description: 'Platos con la suavidad del plátano, el calor del guiso y la magia de los condimentos caribeños.',
-    poblation: '168.240 (países no limítrofes)',
+    description: 'La suavidad del plátano maduro, los guisos intensos y el vibrante sabor caribeño.',
+    population: '168.240 (visitantes no limítrofes)',
     imagePaths: [
       '/images/receipts/dominicana/Dom_1.png',
       '/images/receipts/dominicana/Dom_2.png',
@@ -29,17 +29,16 @@ export const communityData = [
   {
     name: 'Italia',
     image: '/images/glitch-italiana.png?height=300&width=300',
-    description: 'El aroma del tomate maduro, la albahaca fresca y el picor del aceite de oliva.',
-    poblation: '394',
-    imagePaths: ['/images/receipts/chifa/Ita_1.png']
+    description: 'Tomates maduros, aceite de oliva y hierbas mediterráneas.',
+    population: '394',
+    imagePaths: ['/images/receipts/italia/Ita_1.png']
   },
   {
-    name: 'Perú y Chifa',
+    name: 'Perú',
     image: '/images/glitch-chifa2.png?height=300&width=300',
-    description: 'Un balance perfecto de ají picante, mariscos frescos y encurtidos.',
-    poblation: '8.334',
+    description: 'El balance entre el ají, mariscos frescos y el toque único de la fusión Chifa.',
+    population: '8.334',
     imagePaths: [
-      '/images/receipts/chifa/Chi_1.png',
       '/images/receipts/peru/Per_1.png',
       '/images/receipts/peru/Per_2.png',
       '/images/receipts/peru/Per_3.png',
@@ -48,25 +47,11 @@ export const communityData = [
   {
     name: 'Colombia',
     image: '/images/glitch-colombiana.png?height=300&width=300',
-    description: 'La suavidad del maíz, la frescura de las hierbas y la mezcla perfecta de carne y especias.',
-    poblation: '1.669',
+    description: 'El maíz tierno, las hierbas frescas y la armonía de carne y especias que definen su cocina.',
+    population: '1.669',
     imagePaths: [
       '/images/receipts/colombia/Col_1.png',
       '/images/receipts/colombia/Col_2.png'
-    ]
-  },
-];
-
-export const extraData = [
-  {
-    name: 'Perú',
-    image: '/images/glitch-peruana.png?height=300&width=300',
-    description: 'La fusión de ají, arroz y mariscos, una mezcla de aromas y sabores que atraviesan fronteras.',
-    poblation: '8.334',
-    imagePaths: [
-      '/images/receipts/peru/Per_1.png',
-      '/images/receipts/peru/Per_2.png',
-      '/images/receipts/peru/Per_3.png',
     ]
   },
 ];

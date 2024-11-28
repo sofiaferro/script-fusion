@@ -81,7 +81,6 @@ export function CommunityCard({
     <div
       className="bg-black/40 backdrop-blur-sm rounded-lg border border-white/10 shadow-lg overflow-hidden relative transition-transform duration-200 ease-in-out hover:-translate-y-2 max-w-sm w-full hover:cursor-pointer" onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
-      onClick={buttonAction}
     >
       <div className="relative h-48 overflow-hidden">
         <Image

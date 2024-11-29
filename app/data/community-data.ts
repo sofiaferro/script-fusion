@@ -35,7 +35,7 @@ export const communityData = [
   },
   {
     name: 'Perú',
-    image: '/images/glitch-chifa2.png?height=300&width=300',
+    image: '/images/glitch-chifa.png?height=300&width=300',
     description: 'El balance entre el ají, mariscos frescos y el toque único de la fusión Chifa.',
     population: '8.334',
     imagePaths: [

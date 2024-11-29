@@ -8,7 +8,7 @@ export default function Home() {
   const router = useRouter();
 
   const action = () => {
-    router.replace('/sobre-este-proyecto');
+    router.replace('/nodos');
   }
 
   return (

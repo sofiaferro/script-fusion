@@ -15,7 +15,7 @@ export function SuccessModal() {
                     <div className="w-9 h-9 border-4 border-gray-200 border-l-black rounded-full animate-spin"></div>
                 </div>
                 <p className="text-white text-center">
-                    Por favor, espera mientras procesamos tu impresión.
+                    Por favor, esperá mientras procesamos tu impresión ^^.
                 </p>
             </div>
         </div>

@@ -27,7 +27,7 @@ export default function Page() {
     if (success) {
       successTimeout = setTimeout(() => {
         setSuccess(false);
-      }, 20000);
+      }, 25000);
       return () => clearTimeout(successTimeout);
     }
   }, [success]);

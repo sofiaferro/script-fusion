@@ -5,6 +5,7 @@ import { GlitchText } from '@/components/ui/glitch-text'
 import globalData from '@/app/data/global-data'
 import { ParticleScene } from '../ui/particle-scene'
 import styles from '@/app/globals.module.css';
+import { BasicButton } from '../ui/basic-button'
 
 interface HeroSectionProps {
   action: () => void
@@ -32,13 +33,10 @@ export function HeroSection({ action }: HeroSectionProps) {
         <p className={`text-xl md:text-2xl mb-8 ${styles.fadeInUp} ${isLoaded ? styles.visible : ''}`}>
           {globalData.heroDescription}
         </p>
-        <button
-          onClick={action}
-          className={`bg-white text-gray-800 font-bold py-3 px-8 rounded-lg text-lg relative overflow-hidden group ${styles.button}`}
-        >
-          <span className="relative z-10">{globalData.heroButton}</span>
-          <span className={`absolute inset-0 bg-blue-500 opacity-20 ${styles.buttonHoverEffect}`} />
-        </button>
+        <BasicButton
+          title={globalData.heroButton}
+          action={action}
+        />
       </div>
     </section>
   )

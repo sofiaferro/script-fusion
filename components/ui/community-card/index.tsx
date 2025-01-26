@@ -3,7 +3,8 @@
 import { useState, useCallback } from 'react'
 import Image from 'next/image'
 import { PrintButton } from './print-button'
-import { useRouter } from 'next/navigation'
+import { formatImagePath } from '@/app/nodos/utils'
+import { BasicButton } from '../basic-button';
 
 interface CommunityCardProps {
   name: string
@@ -20,14 +21,13 @@ export function CommunityCard({
   image,
   description,
   imagePaths,
-  isPrinterAvailable = true,
+  isPrinterAvailable,
   setError,
   setSuccess,
 }: CommunityCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
   const [isPrinting, setIsPrinting] = useState(false)
-  const router = useRouter()
 
   const handleHover = useCallback(() => {
     setIsHovered(true)
@@ -42,7 +42,7 @@ export function CommunityCard({
     if (isPrinting) return;
     setIsPrinting(true)
     setSuccess(true)
- 
+
     try {
       const randomImagePath = imagePaths[Math.floor(Math.random() * imagePaths.length)]
 
@@ -71,11 +71,29 @@ export function CommunityCard({
   }
 
   const handleDownload = () => {
-    const randomImagePath = imagePaths[Math.floor(Math.random() * imagePaths.length)]
-    return router.push(randomImagePath)
-  }
+    const randomImagePath = imagePaths[Math.floor(Math.random() * imagePaths.length)];
+    const filename = formatImagePath(randomImagePath);
 
-  const buttonAction = isPrinterAvailable ? handlePrint : handleDownload;
+    // Fetch the image and trigger download
+    fetch(randomImagePath)
+      .then(response => response.blob())
+      .then(blob => {
+        // Create a temporary link element to trigger download
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = `${filename}_${Math.floor(Date.now() / 1000) % 10000}.jpg`;
+        document.body.appendChild(link);
+        link.click();
+
+        // Clean up
+        document.body.removeChild(link);
+        URL.revokeObjectURL(link.href);
+      })
+      .catch(error => {
+        console.error('Download failed:', error);
+        setIsPrinting(false);
+      });
+  }
 
   return (
     <div
@@ -106,7 +124,9 @@ export function CommunityCard({
           {description}
         </p>
         <div className="mt-4">
-          <PrintButton isPrinting={isPrinting} isPrinterAvailable={isPrinterAvailable} action={buttonAction} />
+          {isPrinterAvailable ? (
+            <PrintButton isPrinting={isPrinting} isPrinterAvailable={isPrinterAvailable} action={handlePrint} />
+          ) : <BasicButton title='[[ Descargar ]]' action={handleDownload} />}
         </div>
       </div>
     </div>

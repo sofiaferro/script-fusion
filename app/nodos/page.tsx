@@ -19,8 +19,8 @@ export default function Page() {
     setIsLoaded(true)
   }, [])
 
-  // set default for exhibition
-  const isPrinterAvailable = true;
+  // set default for dowloading
+  const isPrinterAvailable = false;
 
   useEffect(() => {
     let successTimeout: string | number | NodeJS.Timeout | undefined;

@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Script Fusión
 
-## Getting Started
+## English
 
-First, run the development server:
+### Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Script Fusión is a living archive exploring culinary practices of migrant communities in the Balvanera neighborhood. The project was showcased at the year-end exhibition of the Master's in Art and Digital Aesthetics (MAE), UNTREF, at [Casa Belgrado](https://casabelgrado.org/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Interactive Nodes**: Each community represented with its unique gastronomic narrative
+- **Archival Printing**: Visitors can print fragments of the archive, symbolizing the continuity of traditions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Team
 
-## Learn More
+- Iris Saladino
+- Isis Vargas
+- Sofía Ferro
 
-To learn more about Next.js, take a look at the following resources:
+### Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📧 script.fusion.lab@gmail.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Español
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Descripción del Proyecto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Script Fusión es un archivo vivo que explora las prácticas culinarias de las comunidades migrantes del barrio de Balvanera. El proyecto fue presentado en la muestra de fin de año de la Maestría en Arte y Estética Digital (MAE) de UNTREF en [Casa Belgrado](https://casabelgrado.org/).
+
+### Características Principales
+
+- **Nodos Interactivos**: Cada comunidad representada con su propia narrativa gastronómica
+- **Impresión de Archivos**: Los visitantes pueden imprimir fragmentos del archivo, simbolizando la continuidad de las tradiciones
+
+### Equipo
+
+- Iris Saladino
+- Isis Vargas
+- Sofía Ferro
+
+### Contacto
+
+📧 script.fusion.lab@gmail.com

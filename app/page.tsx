@@ -8,7 +8,7 @@ export default function Home() {
   const router = useRouter();
 
   const action = () => {
-    router.replace('/nodos');
+    router.push('/nodos');
   }
 
   return (
